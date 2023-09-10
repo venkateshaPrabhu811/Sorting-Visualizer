@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="nav-container">
+      <h1 class="logo">Sorting Visualizer</h1>
+      <div class="controls-container">
+        <button class="nav-btn new-arr-btn">New</button>
+        <div class="input-container">
+          <label for="arr-size">Size</label>
+          <input
+            type="range"
+            class="arr-size-btn"
+            name="arr-size"
+            min="1"
+            max="100"
+            value="50"
+          />
+        </div>
+        <div class="input-container">
+          <label for="speed">Speed</label>
+          <input
+            type="range"
+            class="speed-btn"
+            name="speed"
+            min="1"
+            max="5"
+            value="1"
+          />
+        </div>
+      </div>
+    </header>
+    <main class="hero">
+      <div class="algo-container">
+        <h2><u>Algorithms</u></h2>
+        <div class="btn-container">
+          <button class="algo-btn" id="bSort">Bubble Sort</button>
+          <button class="algo-btn" id="iSort">Insertion Sort</button>
+          <button class="algo-btn" id="sSort">Selection Sort</button>
+          <button class="algo-btn" id="mSort">Merge Sort</button>
+          <button class="algo-btn" id="qSort">Quick Sort</button>
+        </div>
+      </div>
+      <div class="visual-container">
+        <div class="bars"></div>
+      </div>
+    </main>
+  </body>
+</html>
